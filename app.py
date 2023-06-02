@@ -23,7 +23,7 @@ def filter_items():
         cursor.close()
         conn.close()        
         for y in range(len(items)):
-            print(items[y][1])
+            print(str(items[y][1], 'utf-8'))
             print(items[y][2])
     except:
         print("Something went wrong")
